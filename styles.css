@@ -1,0 +1,230 @@
+:root {
+    box-sizing: border-box;
+    --dark: #000000;
+    --white: #ffffff;
+    --button-color: #BBAB8C;
+}
+
+body {
+    background-color: var(--white);
+    font-family: monospace;
+}
+
+
+body.dark {
+    background-color:#222831;
+}
+
+.app-title {
+    text-align: center;
+    margin-top: 0px;
+    color: #f46120;
+
+}
+
+.theme-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    /* min-height: 50px; */
+    height: auto;
+    transition: all 0.3s;
+    padding: 0 40px;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+#genres {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  
+  }
+
+.songs-list-wrapper, .song-card-wrapper, .playlist-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-height: 425px;
+    height: auto;
+    background-color: #f1f3f4;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: all 0.3s;
+}
+
+.song-name, .playlist-name, .current-playlist-song {
+    line-height: 40px;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+    background-color: #f46120;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    border: none;
+}
+/* .dsong-name, .dplaylist-name, .dcurrent-playlist-song{
+background-color: #EEEEEE;
+
+} */
+.song-name:hover, .playlist-name:hover, .current-playlist-song:hover {
+    color: #393E46;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+/* .card:hover .container,  .card:hover .title {
+    color: #ffffff;
+} */
+
+audio {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.change-song {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#previous{
+    /* border-radius: 50%; */
+    padding: 10px 20px;
+    margin: 5px 0px;
+    background-color: #f46120;
+    transition: all 0.3s;
+    border-radius: 4px;
+} 
+#next{
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f46120;
+    transition: all 0.3s;
+    border-radius: 4px;
+} 
+
+.change-song div:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+.toggleThemeBtn {
+    border-radius: 50%;
+    /* border: 0px; */
+    border: none;
+    display: flex;
+    /* padding: 0.5%; */
+    margin-left: auto;
+    background-color: #f46120;
+    color: #ffffff;
+} 
+
+body.dark .toggleThemeBtn {
+    background-color:  #f46120;
+    color: #000000;
+}
+
+.toggleThemeBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+  
+#darkThemeBtn {
+    display:none;
+}
+  
+.toggleThemeBtn > div {
+    padding: 10px;
+}
+
+.add-to-playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    
+
+}
+.add-to-playlist button {
+   
+    padding: 10px;
+    border-radius: 4px;
+    border: 0px;
+    font-size: 15px;
+    background-color: #f46120;
+
+}
+
+.add-to-playlist button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+.submit-button {
+    height: 30px;
+    width: 100%;
+    background-color: #f46120;
+    border-radius: 5px;
+    margin: 10px 0px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+#playlist-name {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.current-playlist-song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dark-mode {
+    background-color:#f1f3f4;
+}
+
+.dark-mode-wrapper {
+    background-color: #73234c;
+}
